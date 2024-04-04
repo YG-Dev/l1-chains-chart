@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      yeyeyeye this is my (short)app
+      yeyeyeye this is my (short)app and now on Firebase!
     </div>
   );
 }
