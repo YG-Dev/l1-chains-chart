@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 function App() {
   const fetchChainsGrowthIndex = async () => {
-    const url = 'https://api.tokenguard.io/db-api/growth-index/basic-timeline-data';
+    const url = '/growth-index/basic-timeline-data';
 
     const data = '{"chainName":"ethereum","period":"last year","metric":"tg_growth_index","compareWith":["solana"]}';
 
