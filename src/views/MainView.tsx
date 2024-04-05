@@ -99,10 +99,10 @@ function MainView() {
                         </Select>
                     </Container>
                     <Container sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <InputLabel id="week-granurality-label">Week granurality</InputLabel>
+                        <InputLabel id="week-granularity-label">Week granularity</InputLabel>
                         <Select
-                            labelId="week-granurality-label"
-                            id="week-granurality-select"
+                            labelId="week-granularity-label"
+                            id="week-granularity-select"
                             value={weekGranularity}
                             onChange={(e) => setWeekGranularity(parseInt(e.target.value as string))}
                             sx={{ width: 200, color: '#fff' }}
