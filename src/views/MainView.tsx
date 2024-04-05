@@ -1,5 +1,5 @@
-import { Alert, Button, CircularProgress, Container, InputLabel, MenuItem, Select, Typography } from "@mui/material";
-import mockData from "../mocks/basic-timeline-data.mock";
+import { Alert, CircularProgress, Container, InputLabel, MenuItem, Select, Typography } from "@mui/material";
+//import mockData from "../mocks/basic-timeline-data.mock";
 import ChainsChart from "../components/ChainsChart";
 import { useEffect, useState } from "react";
 
