@@ -36,8 +36,8 @@ function ChainsChart({ data, blockchainName, cumulativeName, weekGranularity }: 
     console.log(dates)
 
     const customize = {
-        height: 500,
-        stackingOrder: 'descending',
+      height: 400,
+      stackingOrder: 'descending',
     };
 
     return (
@@ -51,23 +51,23 @@ function ChainsChart({ data, blockchainName, cumulativeName, weekGranularity }: 
                 },
             ]}
             series={[
-                {
-                  id: blockchainName,
-                  label: blockchainName,
-                  data: blockchainValues,
-                  area: true,
-                  showMark: true,
-                  color: '#72c50f'
-                },
-                {
-                  id: cumulativeName,
-                  label: cumulativeName,
-                  data: cumulativeValues,
-                  area: true,
-                  showMark: true,
-                  color: '#0a7538'
-                }
-              ]}
+              {
+                id: blockchainName,
+                label: blockchainName.charAt(0).toUpperCase() + blockchainName.slice(1),
+                data: blockchainValues,
+                area: true,
+                showMark: true,
+                color: '#72c50f'
+              },
+              {
+                id: cumulativeName,
+                label: cumulativeName.charAt(0).toUpperCase() + cumulativeName.slice(1),
+                data: cumulativeValues,
+                area: true,
+                showMark: true,
+                color: '#0a7538'
+              }
+            ]}
             {...customize}
         />
     );

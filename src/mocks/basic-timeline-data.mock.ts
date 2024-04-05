@@ -1,6 +1,6 @@
 import { ChainsData } from "../views/MainView";
 
-const data: ChainsData = {
+const mockData: ChainsData = {
     blockchain: {
         tg_growth_index: [{
             date: "2023-04-03",
@@ -321,4 +321,4 @@ const data: ChainsData = {
     }
 }
 
-export default data;
+export default mockData;
